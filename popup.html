@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tab Tracker</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+    <h1 style="font-family: 'Ubuntu', sans-serif; font-size: 24px; font-weight: bold; color: #4b0082; margin: 0;">
+      Tab Tracker
+    </h1>
+    <input
+      id="searchInput"
+      class="rounded-full bg-violet-100 text-base border-2 border-purple-500 p-2 px-4 placeholder-purple-400 focus:text-violet-950 focus:border-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
+      placeholder="search tabs..."
+    />
+  </div>
+
+  <div id="tabs-list"></div>
+
+  <div id="summary">
+    <span id="tab-count">Loading...</span>
+    <button id="refresh"> Refresh</button>
+  </div>
+
+  <ul id="tab-list"></ul>
+
+  <footer>
+    <hr>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

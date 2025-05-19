@@ -1,0 +1,196 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #f9fafb, #e0f7ff);
+    color: #333;
+    padding: 15px;
+    width: 350px;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+  
+  h1 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #0077cc;
+    text-align: center;
+  }
+  
+  #summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  #tab-count {
+    font-weight: bold;
+  }
+ button {
+  padding: 14px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  font-family: 'Ubuntu', sans-serif;  /* Ubuntu font */
+  font-size: 13px;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  width: 110px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: none; /* Prevent all-uppercase */
+}
+
+button span {
+  display: inline-block;
+  transition: letter-spacing 0.5s ease;
+  letter-spacing: 1px;
+}
+
+button:hover span {
+  letter-spacing: 1.5px;
+}
+
+button:hover {
+  background-color: hsl(261deg 80% 48%);
+  color: white;
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+button:active span {
+  letter-spacing: 2px;
+}
+
+button:active {
+  background-color: hsl(261deg 80% 48%);
+  color: white;
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 100ms;
+}
+
+  
+  #tab-list {
+    max-height: 200px;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #tab-list li {
+    background-color: #ffffff;
+    padding: 8px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: background 0.2s ease;
+    font-size: 14px;
+  }
+  
+  #tab-list li:hover {
+    background-color: #e6f4ff;
+  }
+  
+  footer {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+  }
+#tabs-list div {
+  margin-bottom: 8px;
+}
+
+#tabs-list div:hover {
+  background-color: #eee;
+}
+
+#tabs-list small {
+  color: #666;
+  font-size: 12px;
+  font-family: monospace;
+}
+
+/* Search Input Field */
+#searchInput {
+  max-width: 140px;
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 9999px;
+  background-color: #f3e8ff; /* soft violet */
+  border: 2px solid #a855f7; /* base violet border */
+  font-size: 15px;
+  color: #4c1d95; /* deep violet text */
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(168, 85, 247, 0.3);
+  outline: none;
+}
+
+#searchInput::placeholder {
+  color: #c084fc; /* lighter violet */
+}
+
+#searchInput:focus {
+  border-color: #7e22ce; /* darker violet on focus */
+  background-color: #ede9fe;
+  box-shadow: 0 0 0 3px rgba(192, 132, 252, 0.4); /* violet glow */
+  color: #3b0764;
+}
+
+/* Optional hover effect */
+#searchInput:hover {
+  background-color: #f5f3ff;
+  border-color: #9333ea;
+}
+
+#tabs-list div {
+  margin-bottom: 8px;
+  padding: 12px;
+  border-radius: 24px;
+  background-color: #f8f8ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  color: #333; /* default text color */
+}
+
+#tabs-list div:hover {
+  background-color: hsl(261deg 80% 48%); /* same violet as refresh button */
+  color: white;
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px; /* same glowing shadow */
+}
+
+/* Also change the inner text and small elements color on hover */
+#tabs-list div:hover small {
+  color: black;
+}
+#tabs-list > div {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#tabs-list > div:hover {
+  background-color: #d8d0ff;
+  box-shadow: 0 6px 12px rgba(93, 24, 220, 0.25);
+}
+#tabs-list button {
+  font-size: 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.3s ease;
+  padding: 0 6px;
+}
+
+#tabs-list button:hover {
+  color: #ff4b4b;
+}
+
